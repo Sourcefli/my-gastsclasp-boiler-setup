@@ -1,0 +1,23 @@
+{
+  "name": "asb_clasp_source_tracking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node delete_built.js && tsc --pretty",
+    "deploy": "node delete_built.js && tsc --pretty && clasp push",
+    "watch": "node delete_built.js && tsc --pretty && clasp push --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/google-apps-script": "^1.0.11",
+    "gas-lib": "^2.0.3"
+  },
+  "devDependencies": {
+    "copy-files-from-to": "^2.3.0",
+    "mkdirp": "^1.0.3",
+    "rimraf": "^3.0.2"
+  }
+}
